@@ -765,7 +765,7 @@ class Ui_MainWindow(object):
         print("Entered code:", entered_code)
 
         # Connect to the 'takeOff.db' database
-        conn = sqlite3.connect('takeOff.db')  # TODO only edit tables in (m_data, m2_data, m3_data etc)
+        conn = sqlite3.connect('takeOff.db')  # TODO only edit tables in (m_data, m2_data, m3_data, item_data etc)
         cursor = conn.cursor()
 
         # Execute a query to search for the entered code in the 'takeOff' table
